@@ -38,7 +38,7 @@ int	ft_verif(char	**argv)
 	int	j;
 
 	j = 1;
-	while (argv[j])
+	while (argv && argv[j])
 	{
 		if (ft_atoi(argv[j]) < 0)
 		{

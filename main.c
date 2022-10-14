@@ -54,7 +54,7 @@ int	main(int argc, char	**argv)
 {
 	t_info	i;
 
-	if (ft_verif(argv) == 1)
+	if ( argc < 2 || ft_verif(argv) == 1)
 		return (1);
 	else if (argc >= 5 && argc < 7)
 	{

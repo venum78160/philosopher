@@ -15,10 +15,8 @@
 void	*days(void *i_phil)
 {
 	t_philo	*phil;
-	int		j;
 
 	phil = (t_philo *)i_phil;
-	j = 1;
 	if (phil->id == 1 && phil->i->start_time == 0)
 		phil->i->start_time = actual_time();
 	pthread_create(&phil->i->chronos,
